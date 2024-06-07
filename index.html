@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .consistent-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-vh-100 bg-light text-dark">
+        <header class="p-4 bg-white shadow-sm">
+            <h1 class="h3 font-weight-bold">Tasha Trains</h1>
+        </header>
+        <main class="p-4">
+            <section class="text-center my-5">
+                <h2 class="h2 font-weight-bold mb-3">Lockheed Gym’s Best Trainers</h2>
+                <p class="lead mb-3">Tasha Gould | Chase Health<br>At Lockheed Gym 69 Wharton Ave</p>
+            </section>
+            <section class="row mb-5">
+                <div class="col-md-6 mb-4">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <h3 class="h4 font-weight-bold mb-2">Tasha - Board Certified Personal Trainer</h3>
+                        <p class="mb-3">Tasha is a dedicated board-certified Personal Trainer with a passion for optimizing her clients' mobility and functionality. With her extensive expertise and compassionate approach, she empowers individuals to overcome physical limitations and achieve their wellness goals.</p>
+                        <p class="mb-3">Phone Number: 000-111-2222</p>
+                        <button class="btn btn-dark" onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });">Book</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img class="img-fluid rounded shadow-sm consistent-img" src="imgs/blackgirlgym3.png" alt="Personal Trainer">
+                </div>
+            </section>
+            <section class="row mb-5">
+                <div class="col-md-6 mb-4">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <h3 class="h4 font-weight-bold mb-2">Chase Health - Level 1 Personal Trainer</h3>
+                        <p class="mb-3">Chase is a former bodybuilder and a newly minted Level 1 PT. He has over a decade of Personal Experiences with all facets of Training. He's working with Tasha and clients on his journey to board certification.</p>
+                        <p class="mb-3">Phone Number: 333-444-5555</p>
+                        <button class="btn btn-dark" onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });">Book</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img class="img-fluid rounded shadow-sm consistent-img" src="imgs/chasehealth.jpeg" alt="Non-Certified Trainer">
+                </div>
+            </section>
+            <section class="row mb-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <img class="img-fluid rounded mb-3 consistent-img" src="imgs/food.jpg" alt="Meal Plans">
+                        <h3 class="h4 font-weight-bold mb-2">Meal Plans - 20$</h3>
+                        <p class="mb-3">Improve your personalised Diet Plan</p>
+                        <button class="btn btn-dark" onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });">Book</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <img class="img-fluid rounded mb-3 consistent-img" src="imgs/everydaygym.jpg" alt="Workout Plans">
+                        <h3 class="h4 font-weight-bold mb-2">Workout Plans - 50$</h3>
+                        <p class="mb-3">Work Specific muscles and achieve your Goals</p>
+                        <button class="btn btn-dark" onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });">Book</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <img class="img-fluid rounded mb-3 consistent-img" src="imgs/recovery.jpg" alt="Injury Plans">
+                        <h3 class="h4 font-weight-bold mb-2">Injury Plans - 70$</h3>
+                        <p class="mb-3">Avoid Injuries and Learn personalised recovery strategies</p>
+                        <button class="btn btn-dark" onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' });">Book</button>
+                    </div>
+                </div>
+            </section>
+            <section id="booking-section" class="bg-light p-4 rounded shadow-sm mb-5">
+                <h2 class="h3 font-weight-bold mb-3">Booking</h2>
+                <form class="row" action="otherpage.html" method="get">
+                    <div class="col-md-6 mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="time" class="form-label">Time</label>
+                        <input type="time" id="time" class="form-control">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="first-name" class="form-label">First name</label>
+                        <input type="text" id="first-name" class="form-control" placeholder="Jane">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="last-name" class="form-label">Last name</label>
+                        <input type="text" id="last-name" class="form-control" placeholder="Smitherton">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" id="email" class="form-control" placeholder="email@janesfakedomain.net">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Choose Your Trainer</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="trainer" id="trainer-tasha" value="Tasha" checked>
+                            <label class="form-check-label" for="trainer-tasha">
+                                Tasha
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="trainer" id="trainer-chase" value="Chase">
+                            <label class="form-check-label" for="trainer-chase">
+                                Chase
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label">Your message</label>
+                        <textarea id="message" class="form-control" placeholder="Enter your question or message"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </section>            
+            <section class="text-center mb-5">
+                <h2 class="h3 font-weight-bold mb-3">Calendar</h2>
+                <p class="mb-3">View Only book to be added</p>
+                <img class="img-fluid mx-auto rounded shadow-sm" src="imgs/calendar.png" alt="Calendar">
+            </section>
+            <section id="reviews-section" class="bg-light p-4 rounded shadow-sm mb-5">
+                <h2 class="h3 font-weight-bold mb-3">Reviews</h2>
+                <div id="reviews-container" class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <h4 class="h5 font-weight-bold mb-2">John Doe</h4>
+                            <p>"Tasha is an amazing trainer! I've seen incredible results."</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <h4 class="h5 font-weight-bold mb-2">Jane Smith</h4>
+                            <p>"Her meal plans have completely transformed my diet."</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <h4 class="h5 font-weight-bold mb-2">Alex Johnson</h4>
+                            <p>"I highly recommend Tasha for anyone looking to get fit and stay healthy."</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="h4 font-weight-bold mb-3">Add a Review</h3>
+                <form id="add-review-form" class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="review-name" class="form-label">Name</label>
+                        <input type="text" id="review-name" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="review-content" class="form-label">Review</label>
+                        <textarea id="review-content" class="form-control" placeholder="Your Review"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-primary" onclick="addReview()">Submit Review</button>
+                    </div>
+                </form>
+            </section>
+            
+            <script>
+            function addReview() {
+                const name = document.getElementById('review-name').value;
+                const content = document.getElementById('review-content').value;
+            
+                if (name && content) {
+                    const reviewContainer = document.createElement('div');
+                    reviewContainer.className = 'col-md-4 mb-3';
+                    
+                    const reviewCard = document.createElement('div');
+                    reviewCard.className = 'bg-white p-3 rounded shadow-sm';
+                    
+                    const reviewTitle = document.createElement('h4');
+                    reviewTitle.className = 'h5 font-weight-bold mb-2';
+                    reviewTitle.textContent = name;
+                    
+                    const reviewText = document.createElement('p');
+                    reviewText.textContent = content;
+                    
+                    reviewCard.appendChild(reviewTitle);
+                    reviewCard.appendChild(reviewText);
+                    reviewContainer.appendChild(reviewCard);
+                    
+                    document.getElementById('reviews-container').appendChild(reviewContainer);
+                    
+                    // Clear the form fields
+                    document.getElementById('review-name').value = '';
+                    document.getElementById('review-content').value = '';
+                } else {
+                    alert('Please fill out both fields.');
+                }
+            }
+            </script>
+            
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
